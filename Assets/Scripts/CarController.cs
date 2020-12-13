@@ -18,8 +18,7 @@ public class CarController : MonoBehaviour
         carBody.centerOfMass = new Vector3(0,-0.5f,0);
     }
 
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         float torque = maxTorque * input.magnitude;
 
         frontLeftWheelCollider.motorTorque = torque;
